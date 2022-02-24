@@ -1,0 +1,41 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    <bean id="college" class="com.iisn.innerBean.StudentName">
+        <property name="sharan" >
+            <bean class="com.iisn.innerBean.StudentDetails">
+                <property name="registerNo" value="1001"/>
+                <property name="name" value="Sharanraj"/>
+                <property name="Address" value="Chennai"/>
+                <property name="mobileNo" value="23232323"/>
+            </bean>
+        </property>
+
+        <property name="Gokul" >
+            <bean class="com.iisn.innerBean.StudentDetails">
+                <property name="registerNo" value="1002"/>
+                <property name="name" value="Gokulraj"/>
+                <property name="Address" value="Chennai"/>
+                <property name="mobileNo" value="28472837"/>
+            </bean>
+        </property>
+
+        <property name="Sharanish">
+            <bean class="com.iisn.innerBean.StudentDetails">
+                <property name="registerNo" value="1003"/>
+                <property name="name" value="Sharanish"/>
+                <property name="Address" value="Chennai"/>
+                <property name="mobileNo" value="324234"/>
+            </bean>
+        </property>
+        <property name="Vinoth">
+            <bean class="com.iisn.innerBean.StudentDetails">
+                <property name="registerNo" value="1004"/>
+                <property name="name" value="Vinothkumar Selvaarasan"/>
+                <property name="Address" value="Chennai"/>
+                <property name="mobileNo" value="423423"/>
+            </bean>
+        </property>
+    </bean>
+</beans>
